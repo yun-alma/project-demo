@@ -1,0 +1,8 @@
+/* pages/photo/index.wxss */
+.weui-grids image{
+  height: 150px;
+  width: 100%;
+}
+.weui-grid{
+  padding: 0 5px;
+}

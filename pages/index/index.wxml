@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+ <view class="swiper">
+     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+      <block wx:for="{{images}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" />
+        </swiper-item>
+      </block>
+     </swiper>
+     <view class="icon-tab">
+       <navigator url='../my/index' open-type="switchTab">
+       <!--open-type="switchTab" 你配置的路径是tabbar里定义的路径，控制台不报错，但是也不会跳转，这个时候如果你需要在导航和tabbar同时跳转，需要加个属性：需要注意的是，当你路径变成非tabbar路径时，需要把这个属性去掉。 -->
+         <svg class="icon" aria-hidden="true">
+           <use xlink:href="#icon-xxx"></use>
+         </svg>
+       </navigator>
+        <navigator url='../my/index' open-type="switchTab">
+         <icon class="iconfont icon-love"></icon>
+       </navigator>
+      
+     </view>
+  </view>
+  <view class="main-body">
+    <ul>
+     <block wx:for="{{images}}" wx:key="*this">
+      <li>
+        <image src="{{item}}" />
+      </li>
+     </block>
+    </ul>
+  </view>
+</view>

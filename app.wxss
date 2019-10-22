@@ -1,0 +1,15 @@
+/**app.wxss**/
+@import 'weui.wxss';
+@import 'iconfont.wxss';
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  background: #999
+} 
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
