@@ -14,3 +14,10 @@
   display: flex;
   justify-content: space-around;
 }
+.main-body{
+  background: #fff;
+  padding-top: 10px;
+}
+.main-body li image{
+  width: 100%;
+} 

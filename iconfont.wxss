@@ -49,10 +49,12 @@
 
 .icon-love:before {
   content: "\e634";
+  color: red;
 }
 
 .icon-biaoqian:before {
   content: "\e635";
+  color: green;
 }
 
 .icon-paihangbang:before {
